@@ -24,21 +24,9 @@
       <!-- Log4J BOM -->
       <dependency>
         <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-bom</artifactId>
-        <version>2.22.1</version>
-        <scope>import</scope>
-        <type>pom</type>
-      </dependency>
+                <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version>
 
-
-      <dependency>
-        <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-api</artifactId>
-      </dependency>
-
-      <dependency>
-        <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-core</artifactId>
       </dependency>
     </dependencies>
   </dependencyManagement>
