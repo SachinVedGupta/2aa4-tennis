@@ -16,7 +16,7 @@ public class Main {
     protected static final Logger logger = LogManager.getlogger();
 
     public static void main(String[] args) {
-        // logger.info(message:"hi");
+        logger.info(message:"hi");
         System.out.println("** Starting Tennis Counter Assistant");
         System.out.println("**** Reading Command-Line Arguments");
         Options options = new Options();

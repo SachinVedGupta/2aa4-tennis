@@ -16,7 +16,7 @@ public class Main {
     protected static final Logger logger = LogManager.getlogger();
 
     public static void main(String[] args) {
-        // logger.info(message:"hi");
+        logger.info(message)
         System.out.println("** Starting Tennis Counter Assistant");
         System.out.println("**** Reading Command-Line Arguments");
         Options options = new Options();
@@ -26,7 +26,6 @@ public class Main {
         try {
             CommandLine cmd = parser.parse(options, args);
             PLAYER1_STRENGTH = Integer.parseInt(cmd.getOptionValue("p1","50"));
-            // can replace println with logger.trace()
             System.out.println("****** P1's Strength is " + PLAYER1_STRENGTH+"/100");
             PLAYER2_STRENGTH = Integer.parseInt(cmd.getOptionValue("p2","50"));
             System.out.println("****** P2's Strength is " + PLAYER2_STRENGTH+"/100");

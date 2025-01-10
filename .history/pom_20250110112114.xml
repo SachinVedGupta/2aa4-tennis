@@ -19,14 +19,18 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
-  <dependencies>
+    <dependencies>
     <!-- To read arguments from command line-->
     <dependency>
       <groupId>commons-cli</groupId>
       <artifactId>commons-cli</artifactId>
       <version>1.6.0</version>
     </dependency>
-    <!-- Log4J BOM -->
+  </dependencies>
+
+  <dependencyManagement>
+    <dependencies>
+      <!-- Log4J BOM -->
       <dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-bom</artifactId>
@@ -34,11 +38,6 @@
         <scope>import</scope>
         <type>pom</type>
       </dependency>
-  </dependencies>
-
-  <dependencyManagement>
-    <dependencies>
-      
 
 
       <dependency>
